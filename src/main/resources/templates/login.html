@@ -2,12 +2,14 @@
 <html lang="en">
 <head th:replace="layout :: head"></head>
 <body>
+<div th:replace="layout :: topdiv"></div>
     <div class="container">
         <div class="row">
             <div class="col s12 m6 offset-m3">
                 <div class="card">
                     <div class="card-image">
-                        <img th:src="@{/assets/images/working-in-computer-pictogram.svg}" alt="desktop computer" />
+                        <h1> ..CCPD..</h1>
+                        <img th:src="@{/assets/images/working-in-computer-pictogram_630.svg}" alt="desktop computer" />
                     </div>
                     <div class="card-content">
                         <div th:replace="layout :: flash"></div>
@@ -35,5 +37,6 @@
         </div>
     </div>
     <div th:replace="layout :: scripts"></div>
+
 </body>
 </html>

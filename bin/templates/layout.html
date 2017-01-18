@@ -11,15 +11,23 @@
     <title>TodoToday</title>
 </head>
 <body>
+
+<div id="topdiv" th:fragment="topdiv" style="backgroundColor:#00e">
+<img class="logo-header" th:src="@{/assets/images/favicon.png}" alt="logo" style="width:24px;height:24px;"/>
+Chinese Collocation Profile Database </div>
 <nav th:fragment="nav">
+
+
     <div class="container">
         <div class="nav-wrapper">
             <a href="#" class="brand-logo">TodoToday</a>
             <ul class="right">
                 <li sec:authentication="name"></li>
+                
                 <li>
                     <form class="logout inline" th:action="@{/logout}" method="post">
-                        <button type="submit"><i class="material-icons">power_settings_new</i></button>
+                        <button type="submit">&#160;&#160;<img th:src="@{/assets/images/1484766521_exit.png}" alt="power_settings_new" style="width:36px;height:36px;" />
+                       </button>
                     </form>
                 </li>
             </ul>
@@ -36,6 +44,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
     <script type="text/javascript" th:src="@{/assets/js/app.js}"></script>
+    
+    <div id="bottomdiv" ><b><font color='white'>© 2017 Chinese Programme, School of Humanities, Massey University. All rights reserved.</font></b></div>
 </div>
+
+
 </body>
 </html>
